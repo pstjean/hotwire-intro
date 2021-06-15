@@ -1,0 +1,14 @@
+#+TITLE: stjeanco
+
+* Installation
+** Generated like so:
+#+begin_src
+rails new stjeanco --skip-action-mailer --skip-action-mailbox --skip-action-text \
+                   --skip-active-storage --skip-sprockets --skip-turbolinks --skip-system-test
+#+end_src
+** Turbo
+*** Add the turbo-rails gem to your Gemfile: gem 'turbo-rails'
+*** Run ./bin/bundle install
+*** Run ./bin/rails turbo:install
+* Infrastructure
+** IDEA Investigate [[https://socketry.github.io/falcon/guides/rails-integration/index.html][Falcon]] as a Puma replacement
